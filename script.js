@@ -11,5 +11,6 @@ function createGrid() {
     for (let i = 0; i < size * size; i++) {
         const cell = document.createElement('div');
         grid.appendChild(cell);
+        cell.classList.add('cell');
     }
 }
