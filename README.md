@@ -1,1 +1,1 @@
-# etch-a-sketch
+In this project I will be creating an Etch-A-Sketch. I will be mainly demonstrating what I have learned in Javascript, but I will also be using some CSS and a little bit of HTML.
