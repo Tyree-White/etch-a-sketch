@@ -10,3 +10,12 @@ body {
     height: 75vh;
     width: 75vh;
 }
+
+.reset,
+.size {
+    background-color: #3882f6;
+    border-radius: 5px;
+    border-color: #3882f6;
+    color: white;
+    font-size: 30px;
+}
