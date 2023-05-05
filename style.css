@@ -12,8 +12,9 @@ body {
     width: 75vh;
 }
 
-.reset,
-.size {
+.clear,
+.size,
+.eraser {
     background-color: #3882f6;
     border-radius: 5px;
     border-color: #3882f6;
