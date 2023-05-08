@@ -5,14 +5,15 @@ const eraser = document.querySelector('.eraser');
 sizeGrid.addEventListener('click', createGrid);
 
 function createGrid() {
-    let size = Number(prompt('Type a number between 1 and 100'));
+    let size = Number(prompt('Type a number from 1 and 100'));
     if (size <= 0 || size > 100) {
         alert('Invalid Input!');
         return
     }
+    grid.style.setProperty("--grid-rows", size);
+    grid.style.setProperty("--grid-cols", size);
     for (let i = 0; i < size * size; i++) {
         const cell = document.createElement('div');
-        grid.appendChild(cell);
-        cell.classList.add('cell');
+        grid.appendChild(cell).className = 'cell';
     }
 }
