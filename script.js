@@ -1,6 +1,6 @@
 const grid = document.querySelector('.grid');
 const sizeGrid = document.querySelector('.size');
-const clear = document.querySelector('clear');
+const clear = document.querySelector('.clear');
 const eraser = document.querySelector('.eraser');
 sizeGrid.addEventListener('click', createGrid);
 
@@ -17,6 +17,9 @@ function createGrid() {
         grid.appendChild(cell).className = 'cell';
         cell.addEventListener('mouseover', function makeBlack() {
             cell.style.background = 'black';
+        });
+        clear.addEventListener('click', function clearAll() {
+            cell.style.background = 'white';
         })
     }
 }
